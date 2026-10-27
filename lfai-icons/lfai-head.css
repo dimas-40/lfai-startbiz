@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap");
+/* LFAI 공통 헤더 브랜드 + 홈 화면 추가 버튼 */
+.lfai-brand{display:inline-flex!important;align-items:center;gap:10px;text-decoration:none!important;color:inherit;flex:none}
+.top .logo img.lfai-mark,.lfai-brand img.lfai-mark{width:36px!important;height:36px!important;border-radius:9px;box-shadow:0 2px 10px rgba(1,17,11,.28);display:block;flex:none}
+.lfai-word{font-family:Pretendard,"Pretendard Variable",system-ui,sans-serif;font-weight:800;font-size:21px;letter-spacing:.09em;line-height:1;color:#0d2a21}
+.top-nav .lfai-word{color:#eef3ee;font-size:16px}
+.top-nav .lfai-brand img.lfai-mark{width:28px!important;height:28px!important;border-radius:7px}
+.lfai-a2hs{display:inline-flex;align-items:center;gap:7px;flex:none;font:600 12.5px/1 Pretendard,system-ui,sans-serif;letter-spacing:.01em;padding:9px 13px;border:1px solid currentColor;border-radius:999px;background:transparent;color:#0d2a21;cursor:pointer;white-space:nowrap;margin-left:18px}
+.lfai-a2hs svg{width:15px;height:15px;flex:none}
+.lfai-a2hs:hover{background:#0d2a21;color:#fff}
+.top-nav .lfai-a2hs{color:#bfe9d6;border-color:rgba(191,233,214,.45);padding:6px 10px;font-size:11px;margin:0 8px 0 0}
+.top-nav .lfai-a2hs:hover{background:rgba(191,233,214,.12);color:#fff}
+.lfai-a2hs[hidden]{display:none!important}
+@media (max-width:760px){
+  .top .wrap .lfai-a2hs{order:2;margin-left:auto;padding:0;width:40px;height:40px;justify-content:center}
+  .top .wrap .lfai-a2hs span{display:none}
+  .top .wrap .burger{order:3;margin-left:8px!important}
+  .lfai-word{font-size:18px}
+  .top .logo img.lfai-mark{width:32px!important;height:32px!important}
+}
+@media (max-width:440px){.top .wrap{gap:9px!important}.top .wrap .brandline{font-size:8px!important;letter-spacing:.04em!important;max-width:66px!important;padding-left:8px!important;margin-left:0!important}.top .wrap .lfai-a2hs{width:36px;height:36px}.top .wrap .burger{width:38px!important;height:38px!important;margin-left:6px!important}.lfai-word{font-size:16px}.top .logo img.lfai-mark{width:30px!important;height:30px!important}.lfai-brand{gap:7px}.top .ptag{font-size:10px!important;padding:2px 6px!important}}
+@media (max-width:360px){.top .wrap .brandline{display:none}}
+.lfai-sheet{position:fixed;left:0;right:0;bottom:0;z-index:2000;background:#0b1f17;color:#eef3ee;padding:22px 22px calc(22px + env(safe-area-inset-bottom,0px));box-shadow:0 -20px 50px rgba(0,0,0,.35);font:15px/1.7 Pretendard,system-ui,sans-serif;transform:translateY(100%);transition:transform .28s ease}
+.lfai-sheet.on{transform:none}
+.lfai-sheet .row{display:flex;align-items:center;gap:14px;max-width:640px;margin:0 auto}
+.lfai-sheet img{width:52px;height:52px;border-radius:12px;flex:none}
+.lfai-sheet b{display:block;font-size:16px;color:#fff;margin-bottom:2px}
+.lfai-sheet p{margin:0;color:#c6d6cc;font-size:14px}
+.lfai-sheet button{margin-left:auto;flex:none;background:none;border:1px solid #2f4a3f;color:#c6d6cc;font:inherit;font-size:13px;padding:6px 12px;border-radius:999px;cursor:pointer}
+.lfai-bl{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#56645d;border-left:1px solid #e2e9e5;padding-left:16px;margin-left:-24px;white-space:nowrap;line-height:1.4}
+@media (max-width:900px){.lfai-bl{font-size:9px;letter-spacing:.06em;padding-left:10px;margin-left:-4px;white-space:normal;line-height:1.25;max-width:84px}}
+/* 2026-10-22 확대: 마크 ×1.7, 세로 가운데 정렬 */
+.top .wrap{align-items:center}
+.lfai-brand{gap:14px;align-items:center}
+.top .logo img.lfai-mark,.lfai-brand img.lfai-mark{width:60px!important;height:60px!important;border-radius:15px}
+.lfai-word{font-size:30px;letter-spacing:.08em}
+.top-nav .lfai-brand img.lfai-mark{width:48px!important;height:48px!important;border-radius:12px}
+.top-nav .lfai-word{font-size:24px}
+.top-nav .lfai-brand{gap:11px}
+.top .brandline,.top .lfai-bl,.top-nav .lfai-slogan{align-self:center}
+.top .ptag{align-self:center}
+@media (max-width:760px){.top .logo img.lfai-mark{width:48px!important;height:48px!important;border-radius:12px}.lfai-word{font-size:24px}.lfai-brand{gap:10px}}
+@media (max-width:600px){.top-nav .lfai-brand img.lfai-mark{width:40px!important;height:40px!important}.top-nav .lfai-word{font-size:20px}}
+@media (max-width:440px){.top .logo img.lfai-mark{width:46px!important;height:46px!important;border-radius:11px}.lfai-word{font-size:21px}.lfai-brand{gap:8px}}
+@media (max-width:380px){.top .logo img.lfai-mark{width:40px!important;height:40px!important}.lfai-word{font-size:18px}}
+/* 2026-10-22 슬로건: 검정 세리프 이탤릭 — 가독성·격 */
+.top .wrap .brandline,.top .wrap .lfai-bl{font-family:"Cormorant Garamond","Noto Serif KR",Georgia,"Times New Roman",serif!important;font-style:italic!important;font-weight:600!important;font-size:19px!important;letter-spacing:.005em!important;text-transform:none!important;color:#111!important;line-height:1.1!important;border-left:1px solid rgba(17,17,17,.22)!important;padding-left:18px!important;margin-left:-6px!important;white-space:nowrap!important;max-width:none!important;display:inline-block!important;-webkit-font-smoothing:antialiased}
+.top-nav .lfai-slogan{font-family:"Cormorant Garamond","Noto Serif KR",Georgia,serif!important;font-style:italic;font-weight:600;font-size:17px!important;letter-spacing:.005em!important;text-transform:none!important;color:#f3efe4!important;border-left-color:rgba(243,239,228,.3)!important;padding-left:14px!important;line-height:1.15}
+.top-nav .lfai-slogan span{display:inline!important}
+@media (max-width:900px){.top .wrap .brandline,.top .wrap .lfai-bl{font-size:16px!important;padding-left:12px!important;margin-left:-2px!important}}
+@media (max-width:760px){.top .wrap .brandline,.top .wrap .lfai-bl{font-size:14.5px!important;white-space:normal!important;max-width:80px!important;line-height:1.08!important;padding-left:10px!important;margin-left:0!important}}
+@media (max-width:600px){.top-nav .lfai-slogan{font-size:13.5px!important}.top-nav .lfai-slogan span{display:block!important}}
+@media (max-width:440px){.top .wrap .brandline,.top .wrap .lfai-bl{font-size:13.5px!important;max-width:72px!important;padding-left:9px!important}}
+@media (max-width:360px){.top .wrap .brandline,.top .wrap .lfai-bl{display:none!important}}
+
+/* 2026-10-22 헤더 버튼 v2 — 앱 설치 + 햄버거 한 쌍 */
+.lfai-a2hs,.top .wrap .burger{height:42px!important;border-radius:13px!important;border:1px solid rgba(13,42,33,.16)!important;background:linear-gradient(180deg,#fffdf8,#f4efe4)!important;box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 6px 16px -10px rgba(6,26,19,.45)!important;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease!important;cursor:pointer}
+.lfai-a2hs:hover,.top .wrap .burger:hover{transform:translateY(-1px);border-color:rgba(13,42,33,.35)!important;box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 10px 22px -12px rgba(6,26,19,.55)!important}
+.lfai-a2hs:active,.top .wrap .burger:active{transform:translateY(0) scale(.97)}
+.lfai-a2hs{padding:0 16px 0 12px!important;gap:9px!important;color:#0d2a21!important;font:700 13px/1 Pretendard,system-ui,sans-serif!important;letter-spacing:.01em}
+.lfai-a2hs svg{width:20px!important;height:20px!important}
+.lfai-a2hs .ar{stroke:#b8873a}
+.lfai-a2hs:hover .ar{animation:lfaiDrop .7s ease}
+@keyframes lfaiDrop{0%{transform:translateY(-3px);opacity:.3}60%{transform:translateY(1px);opacity:1}100%{transform:none}}
+.top-nav .lfai-a2hs{height:34px!important;border-radius:10px!important;background:rgba(243,239,228,.06)!important;border-color:rgba(243,239,228,.28)!important;color:#f3efe4!important;box-shadow:none!important;font-size:12px!important}
+.top-nav .lfai-a2hs .ar{stroke:#e2c48f}
+/* 햄버거: 길이 다른 세 줄, 가운데 금색 → 열면 X */
+.top .wrap .burger{width:42px!important;padding:0!important;display:none;position:relative;flex-direction:column;align-items:flex-end!important;justify-content:center;gap:5px!important;padding-right:11px!important}
+.top .wrap .burger span{display:block;height:2px!important;border-radius:2px;background:#0d2a21!important;transition:transform .3s cubic-bezier(.6,.05,.3,1.3),width .25s ease,opacity .2s ease,background .2s}
+.top .wrap .burger span:nth-child(1){width:20px!important}
+.top .wrap .burger span:nth-child(2){width:13px!important;background:#b8873a!important}
+.top .wrap .burger span:nth-child(3){width:17px!important}
+.top .wrap .burger:hover span{width:20px!important}
+.top .wrap .burger[aria-expanded="true"]{background:#0d2a21!important;border-color:#0d2a21!important}
+.top .wrap .burger[aria-expanded="true"] span{background:#f4efe4!important;width:20px!important}
+.top .wrap .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.top .wrap .burger[aria-expanded="true"] span:nth-child(2){opacity:0;transform:scaleX(.2)}
+.top .wrap .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (max-width:760px){.top .wrap .burger{display:flex!important}.top .wrap .lfai-a2hs{width:42px!important;padding:0!important;justify-content:center}}
+@media (max-width:440px){.lfai-a2hs,.top .wrap .burger{height:40px!important}.top .wrap .lfai-a2hs,.top .wrap .burger{width:40px!important}.top .wrap .burger{padding-right:10px!important}}
+@media (prefers-reduced-motion:reduce){.lfai-a2hs,.top .wrap .burger,.top .wrap .burger span{transition:none!important}.lfai-a2hs:hover .ar{animation:none}}
+
+/* 2026-10-22 모바일 메뉴 시트 — 질문 + 설명 카드 */
+@media (max-width:760px){
+  .top .nav.open{position:fixed!important;left:0!important;right:0!important;bottom:0!important;top:var(--lfai-navtop,64px)!important;z-index:60;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;padding:22px 20px calc(24px + env(safe-area-inset-bottom,0px))!important;overflow-y:auto;border:0!important;background:radial-gradient(120% 60% at 100% 0%,rgba(201,168,119,.16),transparent 60%),linear-gradient(180deg,#fbf8f1 0%,#f3eee3 100%)!important;animation:lfaiSheet .32s cubic-bezier(.2,.8,.2,1)}
+  @keyframes lfaiSheet{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
+  .lfai-navq{margin:0 0 18px;padding-bottom:18px;border-bottom:1px solid rgba(13,42,33,.12)}
+  .lfai-navq .k{margin:0 0 10px;font:600 10px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.24em;color:#b8873a}
+  .lfai-navq h3{margin:0;font-family:"Noto Serif KR",Georgia,serif;font-weight:500;font-size:26px;line-height:1.3;color:#0d2a21;letter-spacing:-.01em}
+  .lfai-navq p{margin:8px 0 0;font-size:14px;line-height:1.6;color:#56645d}
+  .top .nav.open > a:not(.cta){display:grid!important;grid-template-columns:34px 1fr 18px;align-items:center;column-gap:10px;padding:15px 4px!important;border:0!important;border-bottom:1px solid rgba(13,42,33,.09)!important;color:#0d2a21!important;text-decoration:none;opacity:0;transform:translateX(-8px);animation:lfaiItem .4s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i,0) * 55ms + 80ms)}
+  @keyframes lfaiItem{to{opacity:1;transform:none}}
+  .top .nav.open > a .n{grid-row:1 / span 2;font:500 11px/1 "JetBrains Mono",ui-monospace,monospace;color:#b8873a;letter-spacing:.06em}
+  .top .nav.open > a .t{font-family:"Noto Serif KR",Georgia,serif;font-size:19px;font-weight:500;line-height:1.3;letter-spacing:-.01em}
+  .top .nav.open > a .d{grid-column:2;font-family:Pretendard,system-ui,sans-serif;font-size:13px;font-weight:400;color:#6b766f;line-height:1.5;margin-top:2px}
+  .top .nav.open > a .go{grid-row:1 / span 2;grid-column:3;color:#b8873a;font-size:16px;transition:transform .2s}
+  .top .nav.open > a:active .go{transform:translateX(4px)}
+  .top .nav.open > a.cta{margin-top:auto!important;padding:16px 18px!important;border-radius:14px!important;background:#0d2a21!important;color:#f6f1e6!important;text-align:center!important;font-weight:700;border:0!important;opacity:0;animation:lfaiItem .4s .35s forwards;box-shadow:0 14px 30px -18px rgba(6,26,19,.7)}
+  .lfai-navfoot{margin-top:16px;text-align:center;font-family:"Cormorant Garamond","Noto Serif KR",Georgia,serif;font-style:italic;font-weight:600;font-size:16px;color:#0d2a21;opacity:.75}
+  .lfai-navfoot small{display:block;margin-top:4px;font-family:Pretendard,system-ui,sans-serif;font-style:normal;font-weight:400;font-size:11.5px;color:#7a847d;opacity:1}
+  html.lfai-menu-open,html.lfai-menu-open body{overflow:hidden}
+  html.lfai-menu-open header.top{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;filter:none!important;transform:none!important;background:#fbf8f1!important}
+}
+@media (prefers-reduced-motion:reduce){.top .nav.open,.top .nav.open > a{animation:none!important;opacity:1!important;transform:none!important}}
+
+/* 2026-10-22 Voice Terminal Drawer v0.2 */
+@media (max-width:760px){
+  .top .nav.open{background:linear-gradient(180deg,#ece5d6 0%,#f9f6f0 30%,#f9f6f0 100%)!important;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 0 0 100vmax rgba(10,42,31,.10);padding:30px 22px calc(26px + env(safe-area-inset-bottom,0px))!important;animation:lfaiRise .4s cubic-bezier(.2,.8,.2,1)!important}
+  @keyframes lfaiRise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+  html.lfai-menu-open .lfai-a2hs{display:none!important}
+  html.lfai-menu-open .top .wrap .burger{margin-left:auto!important}
+  .lfai-navq{margin:0 0 22px!important;padding-bottom:24px!important;border-bottom:1px solid #EAE6DF!important}
+  .lfai-navq .k{font-size:11px!important;letter-spacing:.3em!important;color:#C2A47A!important;opacity:.8;margin:0 0 18px!important}
+  .lfai-navq h3{font-family:"Noto Serif KR",Georgia,serif!important;font-weight:600!important;font-size:32px!important;line-height:1.2!important;color:#0A2A1F!important}
+  .lfai-navq p{margin:12px 0 0!important;font-size:14px!important;color:#6B6B6B!important}
+  .top .nav.open > a:not(.cta){position:relative;overflow:hidden;grid-template-columns:30px 1fr 44px!important;column-gap:12px!important;padding:20px 6px!important;border-bottom:1px solid #EAE6DF!important;border-radius:0;transition:background .25s ease;animation-delay:calc(var(--i,0) * 50ms + 120ms)!important}
+  .top .nav.open > a .n{font-size:12px!important;color:#C2A47A!important}
+  .top .nav.open > a .t{font-size:24px!important;color:#0A2A1F}
+  .top .nav.open > a .d{font-size:13px!important}
+  .top .nav.open > a .go{display:none}
+  .top .nav.open > a .ic{grid-row:1 / span 2;grid-column:3;justify-self:end;position:relative;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:17px;color:#0A2A1F;border:1px solid rgba(10,42,31,.14);background:#fffdf8;transition:transform .25s ease,opacity .25s ease}
+  .top .nav.open > a .ic.rec{color:#b8473a}
+  .top .nav.open > a .ic.rec::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1.5px solid rgba(184,71,58,.45);animation:lfaiPulse 1.8s ease-out infinite}
+  @keyframes lfaiPulse{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.35);opacity:0}}
+  .top .nav.open > a .ghost{position:absolute;right:58px;top:50%;transform:translate(16px,-50%);opacity:0;font:600 12.5px/1 Pretendard,system-ui,sans-serif;color:#0A2A1F;letter-spacing:.02em;transition:transform .3s ease,opacity .3s ease;pointer-events:none;white-space:nowrap}
+  .top .nav.open > a:hover,.top .nav.open > a:focus-visible,.top .nav.open > a:active{background:rgba(10,42,31,.05)}
+  .top .nav.open > a:hover .ghost,.top .nav.open > a:focus-visible .ghost,.top .nav.open > a:active .ghost{opacity:.55;transform:translate(0,-50%)}
+  .top .nav.open > a:hover .d,.top .nav.open > a:active .d{opacity:.25}
+  .top .nav.open > a.cta{display:none!important}
+  .lfai-navcta{margin-top:auto;padding-top:26px;display:grid;gap:14px;opacity:0;animation:lfaiItem .4s .35s forwards}
+  .lfai-navcta .go-voice{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:56px;border:0;border-radius:16px;background:#0A2A1F;color:#F9F6F0;font:700 16px/1 Pretendard,system-ui,sans-serif;letter-spacing:.01em;cursor:pointer;box-shadow:0 16px 32px -18px rgba(10,42,31,.8)}
+  .lfai-navcta .go-voice svg{width:20px;height:20px}
+  .lfai-navcta .go-voice .dot{width:8px;height:8px;border-radius:50%;background:#e06a5a;box-shadow:0 0 0 0 rgba(224,106,90,.6);animation:lfaiDot 1.6s ease-out infinite}
+  @keyframes lfaiDot{0%{box-shadow:0 0 0 0 rgba(224,106,90,.55)}100%{box-shadow:0 0 0 9px rgba(224,106,90,0)}}
+  .lfai-navcta .browse{justify-self:center;background:none;border:0;font:400 13px/1.4 Pretendard,system-ui,sans-serif;color:#8A8A8A;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:4px 8px}
+  .lfai-navfoot{opacity:.6!important;margin-top:18px!important}
+}
+@media (prefers-reduced-motion:reduce){.lfai-navcta{animation:none!important;opacity:1}.top .nav.open > a .ic.rec::after,.lfai-navcta .go-voice .dot{animation:none}}
+.vmic.lfai-callout{box-shadow:0 0 0 0 rgba(201,168,119,.7);animation:lfaiCall 1.4s ease-out 4}
+@keyframes lfaiCall{0%{box-shadow:0 0 0 0 rgba(201,168,119,.7)}100%{box-shadow:0 0 0 18px rgba(201,168,119,0)}}
+/* PC(761px 이상): 모바일 메뉴 부속 숨김, 메뉴 링크는 원래 글자만 */
+@media (min-width:761px){
+  .lfai-navq,.lfai-navcta,.lfai-navfoot{display:none!important}
+  .top .nav > a .n,.top .nav > a .d,.top .nav > a .go,.top .nav > a .ic,.top .nav > a .ghost{display:none!important}
+  .top .nav > a .t{font:inherit;letter-spacing:inherit}
+}

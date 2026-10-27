@@ -1,0 +1,117 @@
+/* LFAI 제품 라인 공통 — 메인 cw.css 위에 얹는 제품 전용 스타일 */
+.logo{display:flex;align-items:center;gap:10px}
+.ptag{font-family:var(--m);font-size:12px;font-weight:800;color:#fff;background:var(--blue);padding:3px 8px;letter-spacing:.04em}
+.phero{background:radial-gradient(110% 90% at 85% 0%,#15513c 0%,#0d2a21 45%,#061a13 100%);position:relative;overflow:hidden}
+.phero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:56px 56px;pointer-events:none}
+.phero .wrap{position:relative}
+/* AS 모듈 실행기 */
+.runner{justify-self:end;width:100%;max-width:470px}
+.runner .dtabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:nowrap}
+.runner .dtabs button,.tablet .dtabs button{flex:1;font-size:12.5px;font-weight:700;color:#a9c2b6;border:1px solid #24392f;padding:7px 4px;min-height:34px;border-radius:999px;white-space:nowrap}
+.runner .dtabs button[aria-selected="true"],.tablet .dtabs button[aria-selected="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
+.runner .say{min-height:62px}
+.runner ol{min-height:150px}
+.rfoot{display:flex;align-items:center;gap:10px;margin-top:14px;border-top:1px solid #1b3128;padding-top:12px;font-size:12.5px;color:#a9c2b6}
+.rfoot button{margin-left:auto;background:var(--blue);color:#fff;font-weight:800;font-size:12.5px;padding:7px 18px}
+.rfoot button[disabled]{background:#21463a;color:#b6cbc0}
+.rk-safe{color:#6fd3a4}.rk-mid{color:#f2b632}.rk-high{color:#ff8f70}
+/* SMOS 태블릿 */
+.tablet{justify-self:end;width:100%;max-width:500px;margin:0}
+.tscr{background:var(--navy2);border:12px solid #111b17;border-radius:26px;padding:20px;color:#dcebe3;box-shadow:0 0 0 1px rgba(111,211,164,.25),0 40px 80px -30px rgba(0,0,0,.6)}
+.tablet .dtabs{display:flex;gap:5px;margin-bottom:14px;flex-wrap:nowrap}
+.tablet .dtabs button{font-size:12px;padding:7px 2px}
+.tablet .say{border-left:2px solid var(--blue);padding:4px 0 4px 14px;font-size:16px;font-weight:650;color:#fff;min-height:56px}
+.tablet .say small{display:block;font-family:var(--m);font-size:10px;letter-spacing:.14em;color:#6fd3a4}
+.kres{margin-top:16px;min-height:120px;display:grid;gap:8px;align-content:start}
+.kres .ln{height:8px;background:#163a2d;border-radius:4px;overflow:hidden}
+.kres .ln i{display:block;height:100%;width:0;background:#6fd3a4;transition:width 1.2s ease}
+.kres .out{border:1px solid #2fbf7f;background:rgba(47,191,127,.08);padding:12px 14px;font-size:14px;color:#fff}
+.kres .out small{display:block;font-size:11px;color:#6fd3a4;margin-bottom:3px}
+.tablet figcaption{margin-top:10px;font-size:12px;color:#8fb3a3;text-align:center}
+/* 계산기 */
+.calc .ck{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;margin-bottom:14px}
+.calc label{display:grid;grid-template-columns:1fr auto;font-size:12px;color:#a9c2b6;gap:0 6px}
+.calc output{font-size:12.5px;font-weight:800;color:#fff;font-variant-numeric:tabular-nums}
+.calc input{grid-column:1 / -1;width:100%;accent-color:#2fbf7f;height:20px}
+.calc .seg{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:12px}
+.calc .seg button{font-size:12px;font-weight:700;color:#a9c2b6;border:1px solid #2a4a3d;padding:6px 10px}
+.calc .seg button[aria-pressed="true"]{background:#2fbf7f;border-color:#2fbf7f;color:#04261a}
+.calc .big{font-size:15px;color:#fff;line-height:1.6}
+.calc .big b{color:#ffd27a}
+.calc .rows{display:grid;gap:6px;margin-top:12px;border-top:1px solid #1f3a30;padding-top:12px}
+.calc .rows div{display:flex;justify-content:space-between;font-size:13px}
+.calc .rows span{color:#a9c2b6}
+.calc .rows b{color:#fff;font-variant-numeric:tabular-nums}
+.calc .todo{margin-top:12px;border-left:2px solid #2fbf7f;padding-left:10px;font-size:13.5px;color:#cfe3d9}
+/* 모듈 목록·요금 */
+.mods{list-style:none;display:grid;gap:0}
+.mods li{display:grid;grid-template-columns:150px minmax(0,1fr) auto;gap:14px;align-items:baseline;padding:12px 0;border-top:1px solid var(--line);font-size:14.5px}
+.mods b{color:var(--ink)}
+.mods span{color:var(--dim)}
+.mods em,.card em{font-style:normal;font-size:12px;font-weight:700;padding:2px 8px;white-space:nowrap}
+.r-safe{background:#e7f5ee;color:#0f6e4c}.r-mid{background:#fff4d8;color:#8a5a00}.r-high{background:#fde8e3;color:#a33a1e}
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.tiers.five{grid-template-columns:repeat(5,minmax(0,1fr))}
+.tiers > div{border:1px solid var(--line);padding:18px}
+.tiers .dk,.lu .dk{font-family:var(--m);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.tiers h3{font-size:20px;margin:6px 0 4px}
+.tiers p:not(.dk){font-size:14px;color:var(--dim)}
+.pair{margin-top:16px;font-size:14.5px;color:var(--dim)}
+.pair b{color:var(--ink)}
+/* 라인업 */
+.lu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.lu a{border:1px solid var(--line);padding:24px 22px;display:flex;flex-direction:column;gap:8px;transition:border-color .2s,background .2s}
+.lu a:hover{border-color:var(--ink)}
+.lu a.on{border:2px solid var(--blue);background:var(--blue10)}
+.lu h3{font-size:21px}
+.lu p:not(.dk){font-size:14.5px;color:var(--dim)}
+.lu span{margin-top:auto;font-size:13px;font-weight:700;color:var(--blue)}
+/* 카탈로그 */
+.filt{display:grid;gap:10px;margin-bottom:24px;border-top:1px solid var(--ink);padding-top:18px}
+.filt > div{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.filt span{font-size:12.5px;font-weight:700;color:var(--faint);width:72px}
+.filt button{font-size:13.5px;font-weight:700;color:var(--dim);border:1px solid var(--line);padding:8px 12px;min-height:38px}
+.filt button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.filt .cnt{font-size:13px;color:var(--faint)}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.card{border:1px solid var(--line);padding:18px;display:flex;flex-direction:column;gap:6px}
+.card .g{font-size:11.5px;color:var(--faint);font-weight:700}
+.card h3{font-size:17px}
+.card p{font-size:13.5px;color:var(--dim);flex:1}
+.card .ch{font-size:12px;color:var(--faint)}
+.card em{align-self:flex-start}
+@media (max-width:1000px){
+  .runner,.tablet{justify-self:center}
+  .cards{grid-template-columns:1fr 1fr}
+  .lu{grid-template-columns:1fr}
+  .tiers.five{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  .mods li{grid-template-columns:1fr auto;gap:4px 10px}
+  .mods li span{grid-column:1 / -1;grid-row:2}
+  .tiers{grid-template-columns:1fr}
+  .tiers.five{grid-template-columns:1fr 1fr}
+  .cards{grid-template-columns:1fr}
+  .calc .ck{grid-template-columns:1fr}
+  .tscr{border-width:8px;padding:14px}
+  .tablet .dtabs button{font-size:11px}
+}
+@media (max-width:760px){
+  .cards{grid-template-columns:1fr 1fr;gap:8px}
+  .card{padding:12px;gap:4px}
+  .card h3{font-size:15px}
+  .card p{font-size:12.5px;line-height:1.45}
+  .card .ch{display:none}
+  .filt span{width:100%}
+}
+
+/* 첫 모듈 피처 */
+.feat{display:flex;justify-content:space-between;align-items:center;gap:24px;border:1px solid var(--ink);padding:22px 24px;margin-bottom:36px;transition:background .2s,border-color .2s}
+.feat:hover{background:var(--bg2);border-color:var(--blue)}
+.feat h2{font-size:22px;margin:4px 0 2px}
+.feat p{font-size:14px;color:var(--dim)}
+.feat .go{font-weight:700;color:var(--blue);white-space:nowrap}
+@media (max-width:760px){.feat{flex-direction:column;align-items:flex-start;gap:10px}}
+.mods.tools li{grid-template-columns:minmax(0,240px) minmax(0,1fr) auto}
+.mods.tools b{overflow-wrap:anywhere}
+@media (max-width:760px){.mods.tools li{grid-template-columns:1fr auto}}

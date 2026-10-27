@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dimas-40.github.io/lfai-startbiz/sitemap.xml

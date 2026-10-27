@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="lfai-icons/favicon.ico?v=1" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="lfai-icons/favicon-32.png?v=1">
+<link rel="apple-touch-icon" sizes="180x180" href="lfai-icons/apple-touch-icon.png?v=1">
+<link rel="manifest" href="lfai.webmanifest?v=1">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="LFAI 법인설립">
+<title>LFAI 법인설립 — 셀프 온라인 법인설립 전산 내비게이터 (준비 중)</title>
+<meta name="description" content="온라인 법인설립(startbiz) 셀프 전산 내비게이터. 서식은 내 AI가, 복잡한 전산 입력은 도구가, 결제·서명·제출은 본인이. 내 정보는 내 폰에만. (준비 중 draft)">
+<meta name="theme-color" content="#0d2a21">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://dimas-40.github.io/lfai-startbiz/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="LFAI 법인설립">
+<meta property="og:title" content="LFAI 법인설립 — 셀프 온라인 법인설립 전산 내비게이터"><meta property="og:description" content="서식은 내 AI가, 전산 입력은 도구가, 제출은 본인. (준비 중)"><meta property="og:url" content="https://dimas-40.github.io/lfai-startbiz/">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://dimas-40.github.io/lfai-as/assets/brand/og-lfai-as.jpg"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/cw.css?v=1">
+<link rel="stylesheet" href="assets/p.css?v=1">
+<link rel="stylesheet" href="lfai-icons/lfai-head.css?v=1">
+<style>
+.stage{display:flex;flex-direction:column;align-items:center;gap:14px}
+.phone{position:relative;width:292px;max-width:80vw;aspect-ratio:9/19.3;border-radius:46px;background:#070b09;padding:10px;box-shadow:0 34px 80px -24px #000c,0 0 0 2px #22332b inset,0 0 0 7px #0c1512}
+.phone .ph-ph{width:100%;height:100%;border-radius:37px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:linear-gradient(160deg,#0d1f18,#09130e);color:#9fb8ac;text-align:center;padding:24px;font-size:13.5px;line-height:1.6}
+.phone .ph-ph b{color:#2fbf7f;font-size:15px}
+.phone .glow{position:absolute;inset:-30px;border-radius:60px;background:radial-gradient(60% 40% at 50% 0,#2fbf7f33,transparent 70%);z-index:-1;pointer-events:none}
+.stagecap{display:flex;align-items:center;gap:8px;font-size:12.5px;color:#7f988c}
+.stagecap .lv{display:inline-flex;align-items:center;gap:6px;color:#f0a33c;font-weight:700}
+.draftbar{background:#3a2a0c;color:#ffcf87;text-align:center;padding:9px 14px;font-size:13px;font-weight:600}
+.pfacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:10px}
+.pfacts div{background:#0e1a15;border:1px solid #1d2d25;border-radius:12px;padding:12px 14px}
+.pfacts p{margin:0 0 4px;color:#7f988c;font-size:12px}.pfacts strong{color:#d7e5de;font-size:14px}
+@media(max-width:820px){.phone{width:268px}}
+</style>
+</head>
+<body class="prod-reg">
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<div class="draftbar">⚠ 준비 중(draft) — 포털 사실 확인·공식 서식 대조 단계입니다. 아직 동작하는 모듈이 아닙니다.</div>
+<header class="top">
+  <div class="wrap">
+    <a class="logo lfai-brand" href="./" aria-label="LFAI 법인설립 홈"><img class="lfai-mark" src="lfai-icons/mark-192.png?v=1" alt="" width="60" height="60"><span class="lfai-word">LFAI</span><span class="ptag">법인설립</span></a>
+    <span class="brandline" lang="en">Life First, AI Second</span>
+    <button class="burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav" aria-label="주 메뉴">
+      <a href="#how">작동 방식</a><a href="#portal">포털</a><a href="https://dimas-40.github.io/lfai-as/store.html">카탈로그</a>
+      <a class="cta" href="https://dimas-40.github.io/lfai-as/">모듈 스토어</a>
+    </nav>
+    <button class="lfai-a2hs" type="button" aria-label="앱 설치 — 홈 화면에 추가"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 19h4"/><g class="ar"><path d="M12 6.5v7"/><path d="M9 11l3 3 3-3"/></g></svg><span>앱 설치</span></button>
+  </div>
+</header>
+<main id="main">
+<section class="hero dark phero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="cat">법인 창업 · 온라인 법인설립 · 전산 내비게이터</p>
+      <h1>복잡한 법인설립,<br>폰에서 셀프로.</h1>
+      <p class="lede"><strong>서식(정관·의사록 등)은 내 AI가</strong>, 복잡한 정부 전산 입력·창 이동은 <strong>도구가</strong>,<br>납입·전자서명·최종 제출은 <strong>본인이 직접</strong>. 내 정보는 <strong>내 폰에만</strong>.</p>
+      <div class="btns"><a class="btn p" href="#how">작동 방식</a><a class="btn s" href="https://dimas-40.github.io/lfai-as/">모듈 스토어</a></div>
+    </div>
+    <figure class="stage" aria-label="작동 시연 (준비 중)">
+      <div class="phone"><span class="glow"></span>
+        <div class="ph-ph"><b>법인설립 내비게이터</b>시연 준비 중<br><span style="font-size:12px;color:#6c8479">startbiz 포털 사실 확인 →<br>공식 서식 대조 → 실기기 완주</span></div>
+      </div>
+      <figcaption class="stagecap"><span class="lv"><i></i>DRAFT</span> 작동 모듈 준비 중</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="facts" aria-label="요약">
+  <div class="wrap">
+    <div><p>서식(정관·의사록)</p><strong>내 AI가 생성</strong></div>
+    <div><p>전산 입력</p><strong>도구가 자동으로</strong></div>
+    <div><p>납입·서명·제출</p><strong>본인 손가락</strong></div>
+    <div><p>내 정보</p><strong>내 폰에만</strong></div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="head2"><div><p class="label">How it works</p><h2>화면 뺏기는 게 아니라,<br>감독하는 오토파일럿.</h2></div><p><strong>춤추듯 번갈아</strong> 진행합니다. 에이전트가 지루한 전산 입력을 끌고, 본인은 턴마다 확인·서명·제출만. 언제든 멈출 수 있습니다.</p></div>
+    <div class="tiers">
+      <div><p class="dk">에이전트</p><h3>끌고 간다</h3><p>온라인 법인설립 전산 창을 한 스텝씩 이동·입력하고, 다음 단계를 설명합니다.</p></div>
+      <div><p class="dk">본인</p><h3>반응한다</h3><p>각 단계 확인, 자본금 납입·전자서명·최종 제출은 본인 손가락으로.</p></div>
+      <div><p class="dk">못 따라와도</p><h3>기다린다</h3><p>대기하고, 다음 단계가 뭔지 다시 설명해 줍니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="portal">
+  <div class="wrap">
+    <div class="head2"><div><p class="label">포털 사실</p><h2>온라인 법인설립 시스템<br>(startbiz)</h2></div><p>아래는 확인 중인 포털 사실 초안입니다. 공식 원문 대조 전이라 바뀔 수 있습니다.</p></div>
+    <div class="pfacts">
+      <div><p>포털</p><strong>startbiz.go.kr</strong></div>
+      <div><p>성격</p><strong>온라인 법인설립 전산</strong></div>
+      <div><p>인증</p><strong>공동인증서 등 본인 인증</strong></div>
+      <div><p>연계</p><strong>인터넷등기소(iros) 설립등기</strong></div>
+      <div><p>자격사 직역</p><strong>법무사·변호사 (대행 아님)</strong></div>
+      <div><p>상태</p><strong>포털 사실 확인 전(⬜)</strong></div>
+    </div>
+    <p class="pair"><b>대행 아닌 셀프 전산 보조 도구.</b> 서식은 내 AI, 납입·서명·제출은 본인 — 법률 자문이 아닙니다. 공식 절차·수수료·요건은 startbiz.go.kr 공식 안내를 따릅니다.</p>
+  </div>
+</section>
+
+<section class="close">
+  <div class="wrap">
+    <div><h2>내 폰에서, 셀프로.</h2><p>에이전트를 한 줄로 깔고, 공개되면 법인설립 모듈을 더합니다.</p></div>
+    <div class="btns"><a class="btn p" href="https://dtslib1979.github.io/termux-bridge/" target="_blank" rel="noopener">에이전트 설치</a><a class="btn s" href="https://dimas-40.github.io/lfai-as/">다른 모듈 보기</a></div>
+  </div>
+</section>
+</main>
+<footer class="foot term">
+  <div class="wrap">
+    <div class="tw">
+      <div class="tbar"><i></i><i></i><i></i><span>LFAI — zsh</span></div>
+      <div class="tbody">
+        <p class="pr"><b>~/LFAI</b> <em>$</em> tree -L 1</p>
+        <p class="root">LFAI/ <span># 같은 엔진, 모듈들</span></p>
+        <details open><summary><span class="br">├──</span> lineup/</summary><ul>
+          <li><span class="br">│   ├──</span> <a href="https://dimas-40.github.io/lfai/">LFAI</a> <span># AI 에이전틱 SI</span></li>
+          <li><span class="br">│   ├──</span> <a href="https://dimas-40.github.io/lfai-as/">as</a> <span># 에이전트 모듈 스토어</span></li>
+          <li><span class="br">│   │   ├──</span> <a href="https://dimas-40.github.io/lfai-registry/">registry</a> <span># 등기 (부동산·법인)</span></li>
+          <li><span class="br">│   │   └──</span> <a href="https://dimas-40.github.io/lfai-startbiz/">startbiz</a> <span># 법인설립 (준비 중)</span></li>
+          <li><span class="br">│   └──</span> <a href="https://dimas-40.github.io/lfai-smos/">smos</a> <span># 턴키 운영 디바이스</span></li></ul></details>
+        <details><summary><span class="br">└──</span> legal/</summary><ul>
+          <li><span class="br">    ├──</span> <a href="https://dimas-40.github.io/lfai/privacy/">privacy</a> <span># 개인정보처리방침</span></li>
+          <li><span class="br">    └──</span> <a href="https://dimas-40.github.io/lfai/terms/">terms</a> <span># 이용약관</span></li></ul></details>
+        <p class="pr last"><b>~/LFAI/as/startbiz</b> <em>$</em> <span class="cur" aria-hidden="true"></span></p>
+      </div>
+    </div>
+    <p class="copy">© 2026 LFAI · 법인설립 · <span class="slg" lang="en">Life First, AI Second</span> · 대행 아닌 셀프 전산 보조 도구 · 법률 자문 아님 · 준비 중(draft)</p>
+  </div>
+</footer>
+<div class="stick" id="stick"><a class="btn p" href="#how">작동 방식</a><a class="btn s" href="https://dtslib1979.github.io/termux-bridge/" target="_blank" rel="noopener">에이전트 설치</a></div>
+<script src="assets/cw.js?v=1" defer></script>
+<script src="lfai-icons/lfai-head.js?v=1" defer></script>
+</body>
+</html>
