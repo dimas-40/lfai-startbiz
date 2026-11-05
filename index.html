@@ -138,5 +138,30 @@
 <div class="stick" id="stick"><a class="btn p" href="#how">작동 방식</a><a class="btn s" href="https://dtslib1979.github.io/termux-bridge/" target="_blank" rel="noopener">에이전트 설치</a></div>
 <script src="assets/cw.js?v=1" defer></script>
 <script src="lfai-icons/lfai-head.js?v=1" defer></script>
+<!-- hero-wgl -->
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+<script type="module">
+import { mount } from "./assets/hero-wgl.js?v=1";
+mount({
+  host: ".hero", hide: [".hero .hbg video", ".hero .hbg img"],
+  css: ".hero .hbg.hwgl-on{background:none!important}.hero.phero{position:relative;isolation:isolate}.hero>.hwgl-c{z-index:-1}",
+  palette: { bg: "#061a13", a: "#4ff0a8", b: "#2fbf86", hi: "#c8ffe6", dim: "#0f3a2a" },
+  fog: 0.028, bloom: { strength: 0.9, radius: 0.45, threshold: 0.25 },
+  layers: {
+    docs: { type: "docs", n: 14, pos: [0, 0.3, 0] },
+    steps: { type: "graph", arc: 1.0, iconSize: 0.7, nodes: [
+      { p: [-6, 1.4, -2], c: "#c8ffe6", r: 0.22, icon: "doc" },
+      { p: [-2, 2.8, -3], c: "#4ff0a8", r: 0.22, icon: "mic" },
+      { p: [2, 1.4, -3], c: "#c8ffe6", r: 0.22, icon: "shield" },
+      { p: [6, 2.8, -2], c: "#4ff0a8", r: 0.26, icon: "stamp" } ], edges: [[0, 1], [1, 2], [2, 3]] },
+    dust: { type: "dust", n: 220 }, grid: { type: "grid", opacity: 0.22 }
+  },
+  scenes: [
+    { show: { docs: 1, dust: 1, grid: 1 }, cam: { pos: [3, 5, 9], tgt: [-3, 0.8, 0] } },
+    { show: { steps: 1, docs: 0.3, dust: 1, grid: 1 }, cam: { pos: [1, 3.6, 14], tgt: [-4, 2, -2] } }
+  ], tour: 8, tourIdle: 0
+});
+</script>
+<!-- /hero-wgl -->
 </body>
 </html>
